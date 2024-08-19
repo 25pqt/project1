@@ -15,6 +15,10 @@ main {
     margin: 48px auto 113px auto;
 }
 
+.main-content {
+    margin-top: 80px;
+}
+
 .user-name {
     font-family: Inter;
     font-size: 16px;
@@ -24,10 +28,12 @@ main {
 }
 
 header {
-    position: sticky;
+    position: relative;
     top: 0;
+    left: 0;
+    width: 100%;
     background-color: #FFFFFF;
-    z-index: 9999;
+    z-index: 999;
     height: 90px;
     border-bottom: 1px solid #ededed;
 }
@@ -227,6 +233,7 @@ body {
 }
 
 .content-slider {
+    margin-bottom: 20px;
     display: flex;
     column-gap: 16px;
     position: relative;
@@ -292,6 +299,38 @@ body {
     border-radius: 999px;
     top: 106px;
     right: -14px;
+}
+
+.preview {
+    margin: 74px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.preview span {
+    border: 1px solid #F3F3F3;
+    padding: 10px 14px;
+    border-radius: 4px;
+}
+
+.preview span:nth-child() {
+    border: 1px solid #F3F3F3;
+    padding: 10px 14px;
+    border-radius: 4px;
+    color: #3A4980;
+    font-weight: 500;
+    background: rgb(244, 232, 243);
+    background: linear-gradient(90deg, rgba(244, 232, 243, 1) 0%, rgba(243, 239, 246, 1) 50%, rgba(238, 224, 249, 1) 100%);
+}
+
+.text-darkgray1 {
+    color: #1D364D;
+}
+
+.preview__icon1 {
+    background-color: #F4E8F3;
 }
 
 footer {
