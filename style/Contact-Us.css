@@ -50,6 +50,15 @@ input {
     font-weight: 500;
 }
 
+.contact {
+    padding: 12px 0px 0px 0px;
+}
+
+.contact .text-darkblue {
+    display: block;
+    margin-bottom: 7px;
+}
+
 .main-color {
     color: #0D3356;
 }
@@ -66,7 +75,7 @@ input {
 .flex-col {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 7px;
 }
 
 .nav__space-between {
@@ -118,7 +127,7 @@ input {
     font-style: italic;
     font-size: 32px;
     line-height: 40px;
-    color: #3A4980;
+    color: #0D3356;
 }
 
 .mt-32 {
@@ -176,9 +185,10 @@ header section {
 header section div nav {
     display: flex;
     align-items: center;
-    gap: 40px;
-    margin-left: 40px;
+    gap: 49px;
+    margin-left: 60px;
     cursor: pointer;
+    color: #1D364D;
 }
 
 nav span {
@@ -248,16 +258,17 @@ main {
 }
 
 .sec-left {
-    padding: 72px 68px;
+    padding: 47px 44px;
     background-color: #F9FAFB;
-    border-top-left-radius: 22px;
-    border-bottom-left-radius: 22px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 28px;
 }
 
 .sec-left__content {
+    padding-top: 6px;
     display: flex;
     gap: 24px;
 }
@@ -265,14 +276,18 @@ main {
 .sec-left__content__info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
 }
 
 .sec-right {
-    padding: 88px 95px;
+    padding: 57px 62px 57px 63px;
     background-color: #FFFFFF;
     border-top-right-radius: 22px;
     border-bottom-right-radius: 22px;
+}
+
+.sec-right__title {
+    padding: 0px 196px 10px 3px;
 }
 
 .sec-right__form {
@@ -288,14 +303,21 @@ main {
 
 .sec-right__form-name {
     grid-area: name;
+    padding-right: 5px;
+    padding-bottom: 17.5px;
 }
 
 .sec-right__form-email {
     grid-area: email;
+    padding-left: 5px;
+    padding-bottom: 17.5px;
 }
 
 .sec-right__form-phone {
     grid-area: phone;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 33px;
 }
 
 .sec-right__form-phone div select {
@@ -307,6 +329,9 @@ main {
 
 .sec-right__form-interested {
     grid-area: interested;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 33px;
 }
 
 .sec-right__form-interested select {
@@ -325,13 +350,14 @@ main {
     outline: none;
     border: none;
     background-color: #F6F6F6;
-    padding: 12px;
+    padding-top: 11px;
+    padding-bottom: 0px;
 }
 
 .sec-right__btn {
-    width: 290px;
-    height: 50px;
-    padding: 8px 12px;
+    width: 295px;
+    height: 54px;
+    padding: 0px 12px;
     display: flex;
     align-items: center;
     justify-content: center;
