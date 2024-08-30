@@ -6,8 +6,13 @@
 * {
     padding: 0;
     margin: 0;
-    /* font-family: "Inter", sans-serif; */
-    font-family: Inter;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 body {
@@ -18,12 +23,18 @@ body {
     padding: 0px 0px 75px 0px;
     gap: 0px;
     opacity: 0px;
+}
 
+
+header {
+    width: 1440px;
+    height: 90px;
+    justify-content: space-between;
 }
 
 h3 {
     color: #444444;
-
+    font-family: "Montserrat", sans-serif;
 }
 
 .italic {
@@ -42,12 +53,43 @@ h3 {
     color: #0D3356;
 }
 
+.left__header {
+    display: flex;
+    width: 627px;
+    height: 40px;
+    margin-top: 25px;
+}
+
+.left__header-icon {
+    width: 195px;
+    height: 40px;
+    font-weight: 800;
+    font-size: 32.8px;
+    color: #0D3356;
+    font-style: italic;
+    line-height: 39.7px;
+    font-family: "Inter", sans-serif;
+}
+
+.left__header-nav {
+    margin-left: 60px;
+    margin-top: 10.5px;
+    width: 372px;
+    height: 19px;
+    font-size: 15.5px;
+    line-height: 19.36px;
+    font-weight: 500;
+    color: #1D364D;
+    word-spacing: 50px;
+    font-family: "Inter", sans-serif;
+}
+
 .right__header {
     display: flex;
     margin-left: 329px;
-    padding-bottom: 20px;
     width: 324px;
     height: 50px;
+    margin-top: 25px;
 }
 
 .flex-col {
@@ -64,20 +106,9 @@ h3 {
     height: 15px;
     color: #C0C3C6;
     margin-bottom: 7px;
+    font-family: "Inter", sans-serif;
 }
 
-.nav__space-between {
-    display: flex;
-    justify-content: space-between;
-    width: 627px;
-    height: 40px;
-}
-
-.space-between {
-    display: flex;
-    justify-content: space-between;
-    width: 625px;
-}
 
 .text-darkgray {
     color: #667085;
@@ -100,6 +131,7 @@ h3 {
     font-size: 16px;
     font-weight: 600;
     color: #1D364D;
+    font-family: "Inter", sans-serif;
 }
 
 .text-large {
@@ -126,15 +158,8 @@ header {
 }
 
 header section {
-    width: 1280px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-    /* background-color: aquamarine; */
-    padding: 25px 80px;
-    /* border-bottom: 1px solid #ededed; */
+    justify-content: center;
 }
 
 header section div nav {
@@ -153,6 +178,11 @@ nav span {
     font-size: 16px;
     line-height: 20px;
     color: #1D364D;
+}
+
+span img {
+    width: 21px;
+    height: 21px;
 }
 
 .icon-bag {
@@ -184,8 +214,8 @@ nav span {
 
 .number {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 17.1px;
+    height: 17.1px;
     border-radius: 9999px;
     border: 2px solid white;
     background-color: black;
@@ -196,6 +226,7 @@ nav span {
     top: -2px;
     right: -2px;
     font-size: small;
+    font-family: "Inter", sans-serif;
 }
 
 .icon-bell {
@@ -240,6 +271,7 @@ main {
 .sec-left__content {
     display: inline;
     height: 690px;
+    font-family: "Inter", sans-serif;
 }
 
 h2 {
@@ -247,6 +279,8 @@ h2 {
     height: 34px;
     font-size: 28px;
     margin: 47px 127px 21px 44px;
+    color: #444444;
+    font-family: "Montserrat", sans-serif;
 }
 
 .sec-left__content-text {
@@ -285,6 +319,9 @@ img {
 h3 {
     width: 192px;
     height: 28px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
 .sec-left__content__info3 {
@@ -297,6 +334,7 @@ h3 {
     width: 377px;
     height: 28px;
     color: #5A5A5A;
+    font-family: "Inter", sans-serif;
 }
 
 .contact {
@@ -330,7 +368,7 @@ h3 {
 .sec-right__content {
     width: 610px;
     height: 670px;
-    margin: 57px 62px;
+    margin: 57px 63px;
 }
 
 h1 {
@@ -338,6 +376,8 @@ h1 {
     font-size: 34px;
     width: 411px;
     height: 94px;
+    margin-left: 3px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .sec-right__content__info {
@@ -372,6 +412,9 @@ input {
     width: 184px;
     height: 19px;
     margin-bottom: 11px;
+    font-weight: 500;
+    color: #444444;
+    font-family: "Inter", sans-serif;
 }
 
 .sec-right__content__info4 {
@@ -414,6 +457,7 @@ input {
     margin-top: 16px;
     font-size: 15px;
     color: #7B7B7B;
+    font-family: "Inter", sans-serif;
 }
 
 .icon-down1 {
@@ -431,6 +475,7 @@ input {
     height: 147px;
     background-color: #F6F6F6;
     color: #7B7B7B;
+
 }
 
 .title2 {
@@ -439,6 +484,7 @@ input {
     font-size: 15px;
     line-height: 18.15px;
     padding: 16px 344px 113px 20px;
+    font-family: "Inter", sans-serif;
 }
 
 .sec-right__content__btn {
@@ -448,6 +494,7 @@ input {
     height: 54px;
     background-color: #1472B2;
     color: #EEEFF8;
+    cursor: pointer;
 }
 
 .title3 {
@@ -456,4 +503,6 @@ input {
     padding: 17px 72px 17px 73px;
     font-size: 16px;
     font-weight: 600;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
 }
