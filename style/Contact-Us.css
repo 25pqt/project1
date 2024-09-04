@@ -6,6 +6,8 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+
 }
 
 html {
@@ -25,232 +27,123 @@ body {
     opacity: 0px;
 }
 
-
-header {
-    width: 1440px;
-    height: 90px;
-    justify-content: space-between;
-}
-
-h3 {
-    color: #444444;
-    font-family: "Montserrat", sans-serif;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.semi-bold {
-    font-weight: 500;
-}
-
-.main-color {
-    color: #0D3356;
-}
-
-.left__header {
+.header {
     display: flex;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
     width: 627px;
     height: 40px;
-    margin-top: 25px;
+    margin: 25px 329px 25px 80px;
 }
 
-.left__header-icon {
+.header__logo {
     width: 195px;
     height: 40px;
-    font-weight: 800;
     font-size: 32.8px;
+    font-weight: 800;
+    font-family: "Inter", "sans-serif";
     color: #0D3356;
+    margin-right: 60px;
     font-style: italic;
-    line-height: 39.7px;
-    font-family: "Inter", sans-serif;
 }
 
-.left__header-nav {
-    margin-left: 60px;
-    margin-top: 10.5px;
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
     width: 372px;
     height: 19px;
-    font-size: 15.5px;
-    line-height: 19.36px;
+    font-size: 16px;
+    color:
+        #1D364D;
     font-weight: 500;
-    color: #1D364D;
-    word-spacing: 50px;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "sans-serif";
+
 }
 
-.right__header {
+
+.header__right {
     display: flex;
-    margin-left: 329px;
-    width: 324px;
-    height: 50px;
+    align-items: center;
+    gap: 15px;
     margin-top: 25px;
 }
 
-.flex-col {
-    display: inline;
-    width: 126px;
-    height: 41px;
-    gap: 7px;
-    padding-top: 4.5px;
+.header__icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F1EE;
+    /* Màu nền mặc định, sẽ được ghi đè cho từng icon */
 }
 
-.user-say {
+.header__icon--bag {
+    background-color: #F5F1EE;
+}
+
+.header__icon--bell {
+    background-color: #EEEFF8;
+}
+
+.header__icon--user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header__number,
+.header__notification {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     font-size: 12px;
-    width: 100px;
-    height: 15px;
+    color: #FFFFFF;
+}
+
+.header__number {
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.header__notification {
+    top: 0;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+.header__user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__greeting {
+    font-size: 12px;
     color: #C0C3C6;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     font-family: "Inter", sans-serif;
 }
 
-
-.text-darkgray {
-    color: #667085;
-}
-
-.text-darkblue {
-    color: #1472B2;
-}
-
-.text-main {
-    color: #3A4980;
-}
-
-.text-sm {
-    font-size: 12px;
-    line-height: 14px;
-}
-
-.user-name {
+.header__username {
     font-size: 16px;
     font-weight: 600;
     color: #1D364D;
     font-family: "Inter", sans-serif;
-}
-
-.text-large {
-    font-size: 24px;
-    line-height: 42px;
-}
-
-.text-icon {
-    font-weight: 800;
-    font-style: italic;
-    font-size: 32px;
-    line-height: 40px;
-    color: #0D3356;
-    width: 195px;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    background-color: #FFFFFF;
-    z-index: 9999;
-    height: 90px;
-    border-bottom: 1px solid #ededed;
-}
-
-header section {
-    display: flex;
-    justify-content: center;
-}
-
-header section div nav {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    color: #1D364D;
-    width: 372px;
-    height: 19px;
-    padding: 10.5px 0px 10.5px 35px;
-    gap: 48px;
-}
-
-nav span {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #1D364D;
-}
-
-span img {
-    width: 21px;
-    height: 21px;
-}
-
-.icon-bag {
-    width: 50px;
-    height: 50px;
-    border-radius: 9999px;
-    background-color: #F5F1EE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    position: relative;
-}
-
-.icon-user {
-    width: 50px;
-    height: 50px;
-    border-radius: 9999px;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    position: relative;
-}
-
-.icon-user img {
-    width: 50px;
-    height: 50px;
-}
-
-.number {
-    position: absolute;
-    width: 17.1px;
-    height: 17.1px;
-    border-radius: 9999px;
-    border: 2px solid white;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -2px;
-    right: -2px;
-    font-size: small;
-    font-family: "Inter", sans-serif;
-}
-
-.icon-bell {
-    width: 50px;
-    height: 50px;
-    border-radius: 9999px;
-    border: 2px solid white;
-    background-color: #EEEFF8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    position: relative;
-}
-
-.notify {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 9999px;
-    background-color: red;
-    top: 0;
-    right: 4px;
-    font-size: small;
 }
 
 main {
@@ -258,23 +151,25 @@ main {
     height: 784px;
     margin: 60px auto 155px auto;
     display: grid;
+    position: relative;
     grid-template-columns: 40% 60%;
 }
 
-.sec-left {
+.contact-section {
     width: 505px;
     height: 784px;
     background-color: #F9FAFB;
     border-radius: 14px 0px 0px 14px;
 }
 
-.sec-left__content {
+.contact-section__content {
     display: inline;
     height: 690px;
     font-family: "Inter", sans-serif;
+    background-color: #F9FAFB;
 }
 
-h2 {
+.contact-section__title {
     width: 334px;
     height: 34px;
     font-size: 28px;
@@ -283,7 +178,7 @@ h2 {
     font-family: "Montserrat", sans-serif;
 }
 
-.sec-left__content-text {
+.contact-section__text {
     width: 417px;
     height: 55px;
     size: 16px;
@@ -293,19 +188,19 @@ h2 {
     display: flex;
 }
 
-.sec-left__content__info {
+.contact-section__info {
     width: 417px;
     height: 550px;
     margin: 0px 44px 47px 44px;
 }
 
-.sec-left__content__info1 {
+.contact-item {
     margin-bottom: 28px;
     height: 101px;
     gap: 16px;
 }
 
-.sec-left__content__info2 {
+.contact-item__icon-text {
     display: flex;
     gap: 16px;
     margin-bottom: 12px;
@@ -316,35 +211,43 @@ img {
     height: 24px;
 }
 
-h3 {
-    width: 192px;
-    height: 28px;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.sec-left__content__info3 {
+.contact-item__details {
     width: 377px;
     height: 61px;
     gap: 5px;
 }
 
-.sec-left__content__info4 {
+.contact-item__description {
     width: 377px;
     height: 28px;
     color: #5A5A5A;
     font-family: "Inter", sans-serif;
 }
 
-.contact {
+.contact-item__text--email {
+    color: #1472B2;
+    font-weight: 500;
+}
+
+.contact-item__mail {
     width: 377px;
     height: 28px;
     margin-left: 40px;
     margin-bottom: 28px;
 }
 
-.phone__number {
+.contact-item__phone-numbers {
+    width: 582px;
+    height: 43px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.contact-item__contact-phone {
+    margin-bottom: 43.28px;
+}
+
+.contact-item__phone {
     margin-bottom: 7px;
     color: #1472B2;
     size: 16px;
@@ -352,26 +255,35 @@ h3 {
     font-weight: 500;
 }
 
-.sec-left__content__info1-phone {
+.contact-section__content__info1-phone {
     width: 417px;
     height: 136px;
     margin-bottom: 28px;
 }
 
-.sec-right {
+.contact-item__title {
+    width: 192px;
+    height: 28px;
+    color: #444444;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 5px;
+}
+
+.contact-form {
     width: 735px;
     height: 784px;
     margin-right: 100px;
     background-color: white;
 }
 
-.sec-right__content {
+.contact-form__content {
     width: 610px;
     height: 670px;
     margin: 57px 63px;
 }
 
-h1 {
+.contact-form__title {
     color: #444444;
     font-size: 34px;
     width: 411px;
@@ -380,35 +292,28 @@ h1 {
     font-family: "Montserrat", sans-serif;
 }
 
-.sec-right__content__info {
+.contact-form__info {
     width: 610px;
     height: 513px;
     margin-top: 56px;
 }
 
-.sec-right__content__info1 {
+
+.contact-form__group {
     display: flex;
     width: 610px;
     height: 80px;
     margin-bottom: 33px;
 }
 
-.sec-right__content__info2 {
+.contact-form__field {
     font-family: Inter;
     width: 295px;
     height: 80px;
     margin-right: 20px;
 }
 
-input {
-    margin-top: 11px;
-    width: 295px;
-    height: 50px;
-    size: 18px;
-    background-color: #F6F6F6;
-}
-
-.sec-right__content__info3 {
+.contact-form__label {
     width: 184px;
     height: 19px;
     margin-bottom: 11px;
@@ -417,7 +322,7 @@ input {
     font-family: "Inter", sans-serif;
 }
 
-.sec-right__content__info4 {
+.contact-form__input-group {
     display: flex;
     width: 295px;
     height: 50px;
@@ -426,51 +331,32 @@ input {
     padding: auto;
 }
 
-.head_no {
+.contact-form__country-code {
     width: 27px;
     height: 18px;
     margin: 16px 3px 16px 15px;
 }
 
-.icon-down {
+.contact-form__icon-down {
     width: 17px;
     height: 17px;
     margin: 17px 17px 16px 0px;
 }
 
-.icon-down>img {
+.contact-form__icon-down>img {
     padding-bottom: 5px;
 }
 
-.title {
+.contact-form__input-title {
     width: 160px;
     height: 18px;
-    margin-top: 16px;
-    font-size: 15px;
-    color: #7B7B7B;
-}
-
-.title1 {
-    width: 131px;
-    height: 18px;
-    margin-left: 20px;
     margin-top: 16px;
     font-size: 15px;
     color: #7B7B7B;
     font-family: "Inter", sans-serif;
 }
 
-.icon-down1 {
-    width: 17px;
-    height: 17px;
-    margin: 17px 15px 16px 100px;
-}
-
-.icon-down1>img {
-    padding-bottom: 5px;
-}
-
-.sec-right__content__message {
+.contact-form__message {
     width: 610px;
     height: 147px;
     background-color: #F6F6F6;
@@ -478,16 +364,7 @@ input {
 
 }
 
-.title2 {
-    width: 246px;
-    height: 18px;
-    font-size: 15px;
-    line-height: 18.15px;
-    padding: 16px 344px 113px 20px;
-    font-family: "Inter", sans-serif;
-}
-
-.sec-right__content__btn {
+.contact-form__btn {
     display: flex;
     margin-top: 55px;
     width: 295px;
@@ -497,7 +374,7 @@ input {
     cursor: pointer;
 }
 
-.title3 {
+.contact-form__btn-text {
     width: 121px;
     height: 20px;
     padding: 17px 72px 17px 73px;
