@@ -112,50 +112,50 @@
             </div>
         </section>
         <section class="contact-form">
-            <div class="contact-form__content">
+            <div class="contact-form__body">
                 <div>
                     <h1 class="contact-form__title">Love to hear from you,
                         Get in touch 👋</h1>
                 </div>
-                <div class="contact-form__info">
-                    <div class="contact-form__group">
-                        <div class="contact-form__field">
-                            <div class="contact-form__label">Your name</div>
-                            <div class="contact-form__input-group">
-                                <div class="contact-form__input-title">Enter your name.</div>
-                            </div>
+                <div class="contact-form__content">
+                    <div>
+                        <div class="contact-form__content-name flex-col">
+                            <label for="name">Your name</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
                         </div>
-                        <div>
-                            <div class="contact-form__label">Your email</div>
-                            <div class="contact-form__input-group">
-                                <div class="contact-form__input-title">Enter your mail.</div>
-                            </div>
+                        <div class="contact-form__content-email flex-col">
+                            <label for="email">Your email</label>
+                            <input type="text" name="email" id="email" placeholder="Enter your email">
                         </div>
                     </div>
-                    <div class="contact-form__group">
-                        <div class="contact-form__field">
-                            <div class="contact-form__label">Phone No.</div>
-                            <div class="contact-form__input-group">
-                                <div class="contact-form__country-code">+91</div>
-                                <div class="contact-form__icon-down"><img src="./assets/icon/down.png" alt="#"></div>
-                                <div class="contact-form__input-title">Enter your phone no.</div>
+                    <div>
+                        <div class="contact-form__content-phone flex-col">
+                            <label for="phone">Your phone</label>
+                            <div class="bg-input">
+                                <select name="slphone" id="slphone">
+                                    <option value="+91">+91</option>
+                                    <option value="+92">+92</option>
+                                </select>
+                                <input type="text" name="phone" id="phone" placeholder="Enter your phone no.">
                             </div>
                         </div>
-                        <div class="contact-form__field">
-                            <div class="contact-form__label">What are you interested</div>
-                            <div class="contact-form__input-group">
-                                <div class="contact-form__input-title">Design & Branding</div>
-                                <div class="contact-form__icon-down"><img src="./assets/icon/down.png" alt="#"></div>
-                            </div>
+                        <div class="contact-form__content-interested flex-col">
+                            <label for="interested">What are you interested</label>
+                            <select name="interested" id="interested" class="text-gray">
+                                <option value="">Design & Branding</option>
+                                <option value="">More Options</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="contact-form__label">Message</div>
-                    <div class="contact-form__message">
-                        <div class="contact-form__input-title">Let tell us know your project about</div>
+                    <div class="contact-form__content-message flex-col">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="100"
+                            placeholder="Let tell us know your project about"></textarea>
                     </div>
-                    <div class="contact-form__btn">
-                        <div class="contact-form__btn-text">Send Message</div>
-                    </div>
+                    <button class="contact-form__btn">
+                        <span>Send Message</span>
+                        <img src="./assets/icon/arrow.png" alt="arrow" style="width: 15px; height: 15px;">
+                    </button>
                 </div>
             </div>
         </section>
