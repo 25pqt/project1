@@ -31,6 +31,11 @@ body {
     display: flex;
 }
 
+.header img {
+    width: 15.53px;
+    height: 17.06px;
+}
+
 .header__left {
     display: flex;
     align-items: center;
@@ -40,7 +45,7 @@ body {
 }
 
 .header__logo {
-    width: 195px;
+
     height: 40px;
     font-size: 32.8px;
     font-weight: 800;
@@ -104,18 +109,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
     font-size: 12px;
     color: #FFFFFF;
+    border-radius: 12px;
 }
 
 .header__number {
-    top: -5px;
-    right: -5px;
-    width: 18px;
-    height: 18px;
-    background-color: black;
-    border: 2px solid white;
+    top: -3px;
+    right: -3px;
+    width: 20px;
+    height: 20px;
+    background-color: #1D364D;
+    border: 1.5px solid white;
+    font-family: "Inter", "sans-serifs";
 }
 
 .header__notification {
@@ -123,7 +129,8 @@ body {
     right: 4px;
     width: 10px;
     height: 10px;
-    background-color: red;
+    background-color: #D75951;
+    border: 1.5px solid white;
 }
 
 .header__user-info {
@@ -288,8 +295,9 @@ img {
     font-size: 34px;
     width: 411px;
     height: 94px;
-    margin: 57px 258px 0px 66px;
+    margin: 60px 258px 0px 66px;
     font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 
 .contact-form__content-name,
@@ -316,18 +324,19 @@ img {
 
 
 .contact-form__btn {
-    width: 290px;
-    height: 50px;
-    padding: 8px 12px;
+    width: 295px;
+    height: 54px;
+    margin-top: 56px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
     border: none;
     color: white;
     background-color: #1472B2;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    padding: 17px 73px;
+    font-size: 16px;
 }
 
 .flex-col {
@@ -351,11 +360,41 @@ textarea {
     font-weight: 400;
 }
 
+.contact-form__content-phone select {
+    height: 50px;
+    width: 65px;
+    padding-left: 13px;
+    font-size: 15px;
+}
+
+.contact-form__content-phone input {
+    padding-left: 17px;
+    font-size: 15px;
+}
+
+.contact-form__content-interested select {
+    color: #7B7B7B;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.contact-form__content-name input,
+.contact-form__content-email input {
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.contact-form__btn span {
+    color: #FFFFFF;
+}
+
 textarea {
+    font-size: 15px;
     width: 610px;
     height: 147px;
     background-color: #F6F6F6;
     border: none;
     font-family: "Inter", "sans-serif";
     font-weight: 400;
+    padding: 16px 344px 113px 20px;
 }
